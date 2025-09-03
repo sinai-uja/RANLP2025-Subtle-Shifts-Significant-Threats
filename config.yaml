@@ -1,0 +1,11 @@
+paths:
+  datasets: ""
+  models: ""
+  checkpoints: ""
+  output: ""
+  csv_predictions: ""
+  attacked_data: ""
+  
+api:
+  api_key: ""
+  base_url: ""
