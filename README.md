@@ -33,7 +33,9 @@ Don't hesitate to send us an e-mail or report an issue, if something is broken (
 ### Example usage
 
 python lime_xai.py --model bert-base-cased --dataset sst2 --checkpoint best_bert-base_sst2 --config config.yaml
+
 python captum_xai.py --model bert-base-cased --dataset sst2 --checkpoint best_bert-base_sst2 --config config.yaml
+
 python shap_xai.py --model bert-base-cased --dataset sst2 --checkpoint best_bert-base_sst2 --config config.yaml
 
 python attack.py --model_decoder gemma-3-1b-it --model_encoder bert-base-cased --dataset sst2 --attack_type shap
