@@ -29,3 +29,13 @@ Contact person: Adrián Moreno Muñoz, ammunoz@ujaen.es
 Don't hesitate to send us an e-mail or report an issue, if something is broken (and it shouldn't be) or if you have further questions.
 
 > This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication. 
+
+### Example usage
+
+python lime_xai.py --model bert-base-cased --dataset sst2 --checkpoint best_bert-base_sst2 --config config.yaml
+python captum_xai.py --model bert-base-cased --dataset sst2 --checkpoint best_bert-base_sst2 --config config.yaml
+python shap_xai.py --model bert-base-cased --dataset sst2 --checkpoint best_bert-base_sst2 --config config.yaml
+
+python attack.py --model_decoder gemma-3-1b-it --model_encoder bert-base-cased --dataset sst2 --attack_type shap
+
+> **Additional Information:** In this setup, the decoder model was served using a dedicated inference server deployed with vLLM. This server efficiently hosts large language models providing improved memory usage and high throughput for handling inference requests. The script interacts with this vLLM server through the OpenAI API interface configured in the YAML settings.
