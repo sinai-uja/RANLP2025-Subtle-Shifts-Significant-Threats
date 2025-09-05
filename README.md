@@ -39,7 +39,7 @@ python captum_xai.py --model bert-base-cased --dataset sst2 --checkpoint best_be
 
 python shap_xai.py --model bert-base-cased --dataset sst2 --checkpoint best_bert-base_sst2 --config config.yaml
 
-python attack.py --model_decoder gemma-3-1b-it --model_encoder bert-base-cased --dataset sst2 --attack_type shap
+python attack.py --model_decoder gemma-3-1b-it --model_encoder bert-base-cased --dataset sst2 --attack_type shap --config config.yaml
 ```
 
 > **Additional Information:** In this setup, the decoder model was served using a dedicated inference server deployed with vLLM. This server efficiently hosts large language models providing improved memory usage and high throughput for handling inference requests. The script interacts with this vLLM server through the OpenAI API interface configured in the YAML settings.
