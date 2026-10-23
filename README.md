@@ -4,20 +4,23 @@ This work investigates the vulnerability of pretrained English language models t
 Please use the following citation:
 
 ```
-@inproceedings{morenomuoz-urelpez-martnezcmara:2025:RANLP,
-    title = "Subtle Shifts, Significant Threats: Leveraging XAI Methods and LLMs to Undermine Language Models Robustness",
-    author = "Moreno, Adri{\'a}n  and
-      Ureña, L. Alfonso and
-      Mart{\'i}nez, Eugenio",
-  title     = {Subtle Shifts, Significant Threats: Leveraging XAI Methods and LLMs to Undermine Language Models Robustness},
-  booktitle      = {Proceedings of the 15th International Conference on Recent Advances in Natural Language Processing - Natural Language Processing in the Generative AI era},
-  month          = {September},
-  year           = {2025},
-  address        = {Varna, Bulgaria},
-  publisher      = {INCOMA Ltd., Shoumen, Bulgaria},
-  pages     = {748--757},
-  abstract  = {Language models exhibit inherent security vulnerabilities, which may be related to several factors, among them the malicious alteration of the input data. Such weaknesses compromise the robustness of language models, which is more critical when adversarial attacks are stealthy and do not require high computational resources. In this work, we study how vulnerable English language models are to adversarial attacks based on subtle modifications of the input of pretrained English language models. We claim that the attack may be more effective if it is targeted to the most salient words for the discriminative task of the language models. Accordingly, we propose a new attack built upon a two-step approach: first, we use a posteriori explainability methods to identify the most influential words for the classification task, and second, we replace them with contextual synonyms retrieved by a small language model. Since the attack has to be as stealthy as possible, we also propose a new evaluation measure that combines the effectiveness of the attack with the number of modifications performed. The results show that pretrained English language models are vulnerable to minimal semantic changes, which makes the design of countermeasure methods imperative.},
-  url       = {https://aclanthology.org/2025.ranlp-1.86}
+@inproceedings{moreno-munoz-etal-2025-subtle,
+    title = "Subtle Shifts, Significant Threats: Leveraging {XAI} Methods and {LLM}s to Undermine Language Models Robustness",
+    author = "Moreno-Mu{\~n}oz, Adri{\'a}n  and
+      Ure{\~n}-L{\'o}pez, L. Alfonso  and
+      Mart{\'i}nez C{\'a}mara, Eugenio",
+    editor = "Angelova, Galia  and
+      Kunilovskaya, Maria  and
+      Escribe, Marie  and
+      Mitkov, Ruslan",
+    booktitle = "Proceedings of the 15th International Conference on Recent Advances in Natural Language Processing - Natural Language Processing in the Generative {AI} Era",
+    month = sep,
+    year = "2025",
+    address = "Varna, Bulgaria",
+    publisher = "INCOMA Ltd., Shoumen, Bulgaria",
+    url = "https://aclanthology.org/2025.ranlp-1.86/",
+    pages = "748--757",
+    abstract = "Language models exhibit inherent security vulnerabilities, which may be related to several factors, among them the malicious alteration of the input data. Such weaknesses compromise the robustness of language models, which is more critical when adversarial attacks are stealthy and do not require high computational resources. In this work, we study how vulnerable English language models are to adversarial attacks based on subtle modifications of the input of pretrained English language models. We claim that the attack may be more effective if it is targeted to the most salient words for the discriminative task of the language models. Accordingly, we propose a new attack built upon a two-step approach: first, we use a posteriori explainability methods to identify the most influential words for the classification task, and second, we replace them with contextual synonyms retrieved by a small language model. Since the attack has to be as stealthy as possible, we also propose a new evaluation measure that combines the effectiveness of the attack with the number of modifications performed. The results show that pretrained English language models are vulnerable to minimal semantic changes, which makes the design of countermeasure methods imperative."
 }
 ```
 
